@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_soft_blue: hsl(215, 51%, 70%);
+  --primary_cyan: hsl(178, 100%, 50%);
+
+  --background: hsl(217, 54%, 11%);
+  --card_background: hsl(216, 50%, 16%);
+
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-family);
+
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.card {
+  padding: 1.4rem;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+
+  background: var(--card_background);
+
+  width: 100%;
+
+  max-width: 21rem;
+
+  box-shadow: 0 0 60px hsl(217, 53%, 7%);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.card h3 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  width: fit-content;
+
+  margin-top: 1rem;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.card h3:hover {
+  color: var(--primary_cyan);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--primary_soft_blue);
+  font-weight: 300;
+
+  margin: 1rem 0;
+  line-height: 1.6rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ethereum_price {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary_cyan);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.ethereum_price img {
+  width: 0.75rem;
+
+  margin-right: 0.5rem;
+}
+
+.time_left {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary_soft_blue);
+  font-size: 1rem;
+}
+
+.time_left img {
+  width: 1.1rem;
+  margin-right: 0.4rem;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--line);
+
+  margin: 1rem 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary_soft_blue);
+
+  font-size: 1rem;
+}
+
+.author img {
+  border-radius: 50%;
+  border: 1.5px solid var(--white);
+
+  width: 2rem;
+
+  margin-right: 1rem;
+}
+
+.author span {
+  color: var(--white);
+  margin-left: 0.2rem;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.author span:hover {
+  color: var(--primary_cyan);
+  cursor: pointer;
+}
