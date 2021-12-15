@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="Cover" src="https://github.com/twistershark/frontendmentor/nftpreviewcard/blob/main/screenshot.png" />
+  <img alt="Cover" src="https://github.com/twistershark/frontend-mentor/blob/main/01-nftPreviewCard/screenshot.png" />
 </p>
 
 ---
